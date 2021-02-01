@@ -18,9 +18,9 @@ export default class Home extends Component {
     };
     this.typed = new Typed(this.el, options);
   }
-  
+
   render() {
-    
+
     return (
       <Router>
         <section className="home bd-grid" id="home">

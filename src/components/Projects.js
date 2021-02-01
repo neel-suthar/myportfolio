@@ -33,7 +33,7 @@ function Projects() {
       ◉ Developed a logic to identify and convert unique genres, cast, and crew information into binary format for each movie.
       ◉ Built a distance function to calculate the similarity scores between two movies using genres and cast information.
       ◉ Developed kNN from scratch using distance function to get neighbors based on similarity; got highly accurate results.`,
-      gihubLink: "https://github.com/neel-suthar"
+      gihubLink: "https://github.com/neel-suthar/movie_recomm_system"
     },
     {
       id: 2,
@@ -43,7 +43,7 @@ function Projects() {
       ◉ Created image processing steps to prepare an image for prediction using Keras and used Matplotlib to display output.
       ◉ Built a logic to process the live webcam feed for prediction, identifying objects, and bounding boxes in a live frame.
       ◉ Made detection process easy by using classes array to identify specific objects in a frame; can be tweaked easily.`,
-      gihubLink: "https://github.com/neel-suthar"
+      gihubLink: "https://github.com/neel-suthar/object_detection_CSE6363"
     },
     {
       id: 3,
@@ -51,32 +51,32 @@ function Projects() {
       technologies: "(Python)",
       description: `◉ Built kNN classifier from scratch with different distance measures and custom data cleaning, preprocessing functions.
       ◉ Applied kNN on breast_cancer, car, and hayes_roth dataset and was able to achieve higher accuracy than WEKA.`,
-      gihubLink: "https://github.com/neel-suthar"
+      gihubLink: "https://github.com/neel-suthar/kNN_classifier"
     }
   ];
 
   return (
-    <section className="project section" id="projects" style={{backgroundColor: "#f8f8ff"}}>
-    <h2 className="section-title">Projects</h2>
+    <section className="project section" id="projects" style={{ backgroundColor: "#f8f8ff" }}>
+      <h2 className="section-title">Projects</h2>
 
-    <div className="project__container bd-grid">
-      {projects.map((project) => (
-        <div className="project__img" onClick={() => handleShow(project.id)} key={project.id}>
-          <p className="project__subtitle">{project.title}</p>
-          <p className="project__text">{project.technologies}</p>
-        </div>
-      ))}
-      
+      <div className="project__container bd-grid">
+        {projects.map((project) => (
+          <div className="project__img" onClick={() => handleShow(project.id)} key={project.id}>
+            <p className="project__subtitle">{project.title}</p>
+            <p className="project__text">{project.technologies}</p>
+          </div>
+        ))}
 
-      <Modal show={show} onHide={handleClose} className="modal" backdrop="static">
-        <p className="modal__close" onClick={handleClose}><FontAwesomeIcon icon={faWindowClose} /></p>
-        <p className="modal__title">{projects[projectId].title}</p>
-        <p className="modal__subtitle">{projects[projectId].technologies}</p>
-        <p className="modal__text" style={{whiteSpace: "pre-line"}}>{projects[projectId].description}</p>
-        <a href={projects[projectId].gihubLink} target="_blank" rel="noreferrer" className="modal-btn" onClick={handleClose} style={{textAlign: "center"}}>View Project &nbsp;<FontAwesomeIcon icon={faGithub} /></a>
-      </Modal>
-    </div>
-  </section>
+
+        <Modal show={show} onHide={handleClose} className="modal" backdrop="static">
+          <p className="modal__close" onClick={handleClose}><FontAwesomeIcon icon={faWindowClose} /></p>
+          <p className="modal__title">{projects[projectId].title}</p>
+          <p className="modal__subtitle">{projects[projectId].technologies}</p>
+          <p className="modal__text" style={{ whiteSpace: "pre-line" }}>{projects[projectId].description}</p>
+          <a href={projects[projectId].gihubLink} target="_blank" rel="noreferrer" className="modal-btn" onClick={handleClose} style={{ textAlign: "center" }}>View Project &nbsp;<FontAwesomeIcon icon={faGithub} /></a>
+        </Modal>
+      </div>
+    </section>
   )
 }
 
