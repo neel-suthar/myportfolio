@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import { Modal } from 'react-bootstrap';
-// import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -66,15 +64,15 @@ function Projects() {
             <p className="project__text">{project.technologies}</p>
           </div>
         ))}
-
-
-        <Modal show={show} onHide={handleClose} className="modal" backdrop="static">
-          <p className="modal__close" onClick={handleClose}><FontAwesomeIcon icon={faWindowClose} /></p>
-          <p className="modal__title">{projects[projectId].title}</p>
-          <p className="modal__subtitle">{projects[projectId].technologies}</p>
-          <p className="modal__text" style={{ whiteSpace: "pre-line" }}>{projects[projectId].description}</p>
-          <a href={projects[projectId].gihubLink} target="_blank" rel="noreferrer" className="modal-btn" onClick={handleClose} style={{ textAlign: "center" }}>View Project &nbsp;<FontAwesomeIcon icon={faGithub} /></a>
-        </Modal>
+        <div onHide={handleClose} className="modal" backdrop="static" style={{ display: show ? 'block' : 'none' }}>
+          <div className="modal-content">
+            <p className="modal__close" onClick={handleClose}><FontAwesomeIcon icon={faWindowClose} /></p>
+            <p className="modal__title">{projects[projectId].title}</p>
+            <p className="modal__subtitle">{projects[projectId].technologies}</p>
+            <p className="modal__text" style={{ whiteSpace: "pre-line" }}>{projects[projectId].description}</p>
+            <a href={projects[projectId].gihubLink} target="_blank" rel="noreferrer" className="modal-btn" onClick={handleClose} style={{ textAlign: "center" }}>View Project &nbsp;<FontAwesomeIcon icon={faGithub} /></a>
+          </div>
+        </div>
       </div>
     </section>
   )

@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-// import { NavHashLink as Link } from 'react-router-hash-link';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 function Header() {

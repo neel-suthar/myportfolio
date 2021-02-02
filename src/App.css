@@ -216,7 +216,8 @@ img {
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
 }
-.rotate_180, .rotate_360 {
+.rotate_180,
+.rotate_360 {
   -webkit-transition: -webkit-transform 0.8s ease-in-out;
   transition: transform 0.8s ease-in-out;
 }
@@ -300,7 +301,7 @@ img {
   height: 140px;
 }
 .project__img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   box-shadow: 0 4px 25px rgba(69, 69, 245, 0.5);
 }
 
@@ -385,8 +386,12 @@ img {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 1s;
+  animation-name: animatetop;
+  animation-duration: 1s;
 }
 
 /* Modal Content */
@@ -398,7 +403,28 @@ img {
   border-radius: 0.6rem;
   width: 98%;
 }
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -500px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
 
+@keyframes animatetop {
+  from {
+    top: -500px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
 .modal__title {
   color: black;
   font-weight: var(--font-semi);
@@ -444,6 +470,77 @@ img {
   color: var(--first-color);
   font-style: italic;
   font-weight: bold;
+}
+
+.scrollTop {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 40px;
+  border-radius: 0.5rem;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: 1s;
+  opacity: 0.8;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+  transform: scale(1.4);
+  animation: bounce 1.8s infinite;
+  -webkit-animation: bounce 2.5s infinite;
+  -moz-animation: bounce 2.5s infinite;
+  -o-animation: bounce 2.5s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-16px);
+  }
+}
+@-moz-keyframes bounce {
+  0%,
+  100% {
+    -moz-transform: translateY(0);
+  }
+  50% {
+    -moz-transform: translateY(-16px);
+  }
+}
+@-o-keyframes bounce {
+  0%,
+  100% {
+    -o-transform: translateY(0);
+  }
+  50% {
+    -o-transform: translateY(-16px);
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }
 
 @media screen and (min-width: 768px) {
