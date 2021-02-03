@@ -1,5 +1,5 @@
 import React from 'react'
-import myImage from '../img/nabout.jpg';
+import myImage from '../img/neel.jpg';
 import resume from '../img/skills/Neel_Suthar_Resume.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';

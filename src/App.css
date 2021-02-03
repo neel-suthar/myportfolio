@@ -252,6 +252,7 @@ img {
 .about__img img {
   width: 800px;
   border-radius: 0.9rem;
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
 }
 .about__text {
   font-size: var(--subtitle-font-size);
