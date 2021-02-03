@@ -12,12 +12,18 @@
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
+  --title-font-size: 1.4rem;
+  --subtitle-font-size: 1rem;
+  --small-font-size: 0.6rem;
 }
 @media screen and (min-width: 768px) {
   :root {
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
+    --title-font-size: 1.6rem;
+    --subtitle-font-size: 1.2rem;
+    --small-font-size: 0.8rem;
   }
 }
 :root {
@@ -155,7 +161,7 @@ img {
 }
 .nav__toggle {
   color: var(--second-color);
-  font-size: 1.5rem;
+  font-size: var(--title-font-size);
   cursor: pointer;
 }
 .active::after {
@@ -191,7 +197,7 @@ img {
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
+  font-size: var(--title-font-size);
   color: var(--second-color);
 }
 .home__social-icon:hover {
@@ -204,7 +210,6 @@ img {
   width: 295px;
   z-index: -1;
 }
-
 .animate_headline {
   text-transform: uppercase;
 }
@@ -249,7 +254,7 @@ img {
   border-radius: 0.9rem;
 }
 .about__text {
-  font-size: 1.2rem;
+  font-size: var(--subtitle-font-size);
   margin-bottom: var(--mb-2);
 }
 .work__container {
@@ -257,23 +262,23 @@ img {
   text-align: center;
 }
 .work__subtitle {
-  font-size: 1.5rem;
+  font-size: var(--title-font-size);
   margin-bottom: 0.05rem;
   text-align: center;
 }
 .work__subtitle_position {
-  font-size: 1rem;
+  font-size: var(--subtitle-font-size);
   color: var(--first-color);
   text-align: center;
 }
 .work__subtitle_date {
-  font-size: 0.8rem;
+  font-size: var(--small-font-size);
   margin-bottom: 0.8rem;
   text-align: center;
   text-decoration: underline;
 }
 .work__text {
-  font-size: 1rem;
+  font-size: var(--normal-font-size);
   margin-bottom: var(--mb-2);
 }
 .project__container {
@@ -281,12 +286,12 @@ img {
   text-align: center;
 }
 .project__subtitle {
-  font-size: 1.2rem;
+  font-size: var(--subtitle-font-size);
   margin-bottom: var(--mb-2);
   text-align: center;
 }
 .project__text {
-  font-size: 0.8rem;
+  font-size: var(--small-font-size);
   color: var(--first-color);
   margin-bottom: var(--mb-2);
   text-align: center;
@@ -301,7 +306,7 @@ img {
   height: 140px;
 }
 .project__img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   box-shadow: 0 4px 25px rgba(69, 69, 245, 0.5);
 }
 
@@ -334,7 +339,6 @@ img {
   display: flex;
   align-items: center;
 }
-
 /* .button-group{
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
 } */
@@ -363,15 +367,11 @@ img {
   font-weight: var(--font-semi);
   padding: 2rem 0;
 }
-.footer__title {
-  font-size: 2rem;
-  margin-bottom: var(--mb-4);
-}
 .footer__social {
   margin-bottom: var(--mb-4);
 }
 .footer__icon {
-  font-size: 1.5rem;
+  font-size: var(--title-font-size);
   color: #fff;
   margin: 0 var(--mb-2);
 }
@@ -379,23 +379,23 @@ img {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  z-index: 10000; /* Sit on top */
+  padding-top: 4rem; /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  overflow: auto; 
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 1s;
   animation-name: animatetop;
   animation-duration: 1s;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content { 
   background-color: #fff;
   margin: auto;
   padding: 10px 16px;
@@ -428,12 +428,12 @@ img {
 .modal__title {
   color: black;
   font-weight: var(--font-semi);
-  font-size: 1.6rem;
+  font-size: var(--title-font-size);
   margin-bottom: 2px;
 }
 .modal__close {
   float: right;
-  font-size: 1.6rem;
+  font-size: var(--title-font-size);
   color: red;
   -webkit-transition: -webkit-transform 0.8s ease-in-out;
   transition: transform 0.8s ease-in-out;
@@ -446,14 +446,13 @@ img {
 .modal__subtitle {
   color: black;
   font-weight: var(--normal-font-size);
-  font-size: 1.2rem;
+  font-size: var(--normal-font-size);
   margin-bottom: var(--mb-6);
-
   font-style: italic;
 }
 
 .modal__text {
-  font-size: 1rem;
+  font-size: var(--normal-font-size);
   margin-bottom: var(--mb-2);
 }
 

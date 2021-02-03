@@ -15,12 +15,12 @@ function Header() {
 
           <div className="nav__menu" id="nav-menu">
             <ul className="nav__list">
-              <Link smooth={true} spy={true} offset={-110} to="home" activeClass="active" className="nav__item nav__link">Home</Link>
-              <Link smooth={true} spy={true} offset={-110} to="about" activeClass="active" className="nav__item nav__link">About</Link>
+              <Link smooth={true} spy={true} offset={-40} to="home" activeClass="active" className="nav__item nav__link">Home</Link>
+              <Link smooth={true} spy={true} offset={-40} to="about" activeClass="active" className="nav__item nav__link">About</Link>
               <Link smooth={true} spy={true} offset={-40} to="work" activeClass="active" className="nav__item nav__link">Work</Link>
-              <Link smooth={true} spy={true} offset={-30} to="skills" activeClass="active" className="nav__item nav__link">Skills</Link>
-              <Link smooth={true} spy={true} offset={-110} to="projects" activeClass="active" className="nav__item nav__link">Projects</Link>
-              <Link smooth={true} spy={true} offset={-110} to="contact" activeClass="active" className="nav__item nav__link">Contact Me</Link>
+              <Link smooth={true} spy={true} offset={-40} to="skills" activeClass="active" className="nav__item nav__link">Skills</Link>
+              <Link smooth={true} spy={true} offset={-40} to="projects" activeClass="active" className="nav__item nav__link">Projects</Link>
+              <Link smooth={true} spy={true} offset={-40} to="contact" activeClass="active" className="nav__item nav__link">Contact Me</Link>
             </ul>
           </div>
 
