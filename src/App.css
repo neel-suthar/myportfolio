@@ -464,6 +464,7 @@ img {
   padding: 0.5rem 1rem;
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
+  margin: 0.6rem 1rem 0 0;
 }
 
 .blue__it {
