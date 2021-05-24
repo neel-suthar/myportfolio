@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/myportfolio/static/css/main.e375608a.chunk.css",
-    "main.js": "/myportfolio/static/js/main.6df5ab71.chunk.js",
-    "main.js.map": "/myportfolio/static/js/main.6df5ab71.chunk.js.map",
+    "main.js": "/myportfolio/static/js/main.12f50756.chunk.js",
+    "main.js.map": "/myportfolio/static/js/main.12f50756.chunk.js.map",
     "runtime-main.js": "/myportfolio/static/js/runtime-main.daa22582.js",
     "runtime-main.js.map": "/myportfolio/static/js/runtime-main.daa22582.js.map",
     "static/js/2.e5f8b016.chunk.js": "/myportfolio/static/js/2.e5f8b016.chunk.js",
@@ -12,7 +12,7 @@
     "index.html": "/myportfolio/index.html",
     "static/css/main.e375608a.chunk.css.map": "/myportfolio/static/css/main.e375608a.chunk.css.map",
     "static/js/2.e5f8b016.chunk.js.LICENSE.txt": "/myportfolio/static/js/2.e5f8b016.chunk.js.LICENSE.txt",
-    "static/media/Neel_Suthar_Resume.pdf": "/myportfolio/static/media/Neel_Suthar_Resume.7e4a3d7f.pdf",
+    "static/media/Neel_Suthar_Resume.pdf": "/myportfolio/static/media/Neel_Suthar_Resume.78ac73ab.pdf",
     "static/media/OOP.svg": "/myportfolio/static/media/OOP.66df6ec6.svg",
     "static/media/agile.jpg": "/myportfolio/static/media/agile.fdfcd92b.jpg",
     "static/media/autoscaling.png": "/myportfolio/static/media/autoscaling.6b2779fd.png",
@@ -49,6 +49,6 @@
     "static/js/runtime-main.daa22582.js",
     "static/js/2.e5f8b016.chunk.js",
     "static/css/main.e375608a.chunk.css",
-    "static/js/main.6df5ab71.chunk.js"
+    "static/js/main.12f50756.chunk.js"
   ]
 }
