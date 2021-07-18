@@ -15,6 +15,27 @@ function Projects() {
 	const projects = [
 		{
 			id: 0,
+			title: "Microservices using Spring Boot & Spring Cloud",
+			technologies: "(JAVA, Spring, Zuul, OpenFeign, Eureka, Zipkin)",
+			description: `◉ Created Spring Cloud config server to manage the external properties across different environments in a central place.
+      ◉ Built and set up the Eureka discovery server to register services and used OpenFeign for API to API communication.
+      ◉ Configured Zuul and Spring Cloud API gateways with Zipkin and ActiveMQ for distributed tracing and logs streaming.
+			◉ Developed Property File Access, Product Stock, and Product Enquiry services with multiple instances.`,
+			gihubLink: null,
+			live: null,
+		},
+		{
+			id: 1,
+			title: "Volunteering Management System",
+			technologies: "(JAVA, Spring Boot, React, Bootstrap, HTML)",
+			description: `◉ Developed a system where students can apply for volunteering under professor on their department’s approval.
+      ◉ Designed the database and created API to serve the data on React front-end and added authentication using Spring Boot.
+      ◉ Designed and created dashboards for users such as students, professors, department admin and admin using Bootstrap.`,
+			gihubLink: null,
+			live: null,
+		},
+		{
+			id: 2,
 			title: "Movie Recommendation System",
 			technologies: "(Python, Pandas, NumPy, The Movies Dataset)",
 			description: `◉ Built a system to recommend several movies to a user based on their input movie with help of The Movies Dataset.
@@ -25,7 +46,7 @@ function Projects() {
 			live: null,
 		},
 		{
-			id: 1,
+			id: 3,
 			title: "Object Counting on webcam – Object Detection",
 			technologies: "(Python, keras, TensorFlow, OpenCV, pandas, YOLOv3)",
 			description: `◉ Trained object detection model with the help of MS COCO dataset using YOLOv3 object detection system and Keras.
@@ -36,7 +57,7 @@ function Projects() {
 			live: null,
 		},
 		{
-			id: 2,
+			id: 4,
 			title: "Rating Predictor on Game Review",
 			technologies:
 				"(Python, NumPy, Pandas, SVM, sklearn, Python Flask, AWS EC2)",
@@ -48,7 +69,7 @@ function Projects() {
 			live: null,
 		},
 		{
-			id: 3,
+			id: 5,
 			title: "kNN classifier from scratch",
 			technologies: "(Python)",
 			description: `◉ Built kNN classifier from scratch with different distance measures and custom data cleaning, preprocessing functions.
@@ -56,18 +77,9 @@ function Projects() {
 			gihubLink: "https://github.com/neel-suthar/kNN_classifier",
 			live: null,
 		},
+
 		{
-			id: 4,
-			title: "Volunteering Management System",
-			technologies: "(JAVA, Spring Boot, React, Bootstrap, HTML)",
-			description: `◉ Developed a system where students can apply for volunteering under professor on their department’s approval.
-      ◉ Designed the database and created API to serve the data on React front-end and added authentication using Spring Boot.
-      ◉ Designed and created dashboards for users such as students, professors, department admin and admin using Bootstrap.`,
-			gihubLink: null,
-			live: null,
-		},
-		{
-			id: 5,
+			id: 6,
 			title: "Covid Cases",
 			technologies: "(Java, Spring, Thymleaf, Bulma, HTML)",
 			description: `◉ Developed a web app using Java & Spring Boot which shows confirmed covid cases as of today and changes in cases.
@@ -76,7 +88,7 @@ function Projects() {
 			live: "https://covid19-global-daily.herokuapp.com/",
 		},
 		{
-			id: 6,
+			id: 7,
 			title: "Daily Stars-APOD",
 			technologies: "(React, JavaScript, HTML, CSS)",
 			description: `◉ Built a web app that display astronomy picture of a day using NASA-apod API, deployed it using Heroku.`,
